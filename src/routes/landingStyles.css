@@ -101,3 +101,10 @@
     overflow: hidden;
     object-fit: cover;
 }
+
+/* About Page */
+
+.aboutBody {
+    /* background-image: '/woodBackground.png'; */
+    background-color: #000000;
+}

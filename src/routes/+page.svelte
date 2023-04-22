@@ -1,6 +1,6 @@
 
 <script>
-    import "./styles.css"
+    import "./landingStyles.css"
 </script>
 
 <style>
