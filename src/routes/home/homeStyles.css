@@ -369,3 +369,297 @@ html, body {
     text-shadow: 2px 2px #000000;
 }
 
+.openDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.openText {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 70%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+
+}
+
+.closingTimeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.closingTimeText {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 70%;
+    text-align: center;
+    z-index: 100;
+    text-shadow: 2px 2px #ffffff;
+}
+
+.hoursMainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 7%;
+}
+
+.listedHours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.hoursListTitle {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-shadow: 2px 2px #ffffff;
+}
+
+.hoursListItem {
+    font-size: 1.75em;
+    font-family: 'Raleway', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+}
+
+.reservationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+
+.reservationButton {
+    background-color: #3A2A65;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: 'Overlock SC', cursive;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-decoration: none;
+}
+
+.locationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.locationTitle {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 78%;
+    text-align: right;
+    z-index: 100;
+    padding-top: 7%;
+    text-shadow: 2px 2px #ffffff;
+}
+
+.locationText {
+    font-size: 1.75em;
+    font-family: 'Raleway', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 78%;
+    text-align: right;
+    z-index: 100;
+    padding-top: 2%;
+}
+
+/* Contact Page */
+
+.contactDiv {
+    background-image: url("/woodBackground.png");
+    margin-top: 0;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 7%;
+}
+
+.contactFormDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    width: 45%;
+}
+
+.contactTitle {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #DCD260;
+    margin:0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-shadow: 2px 2px #DCD260;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contactInput {
+    font-size: 1.75em;
+    font-family: 'Raleway', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    background-color: #DCD260;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    margin-top: 4%;
+    border-radius:40px/55%;
+}
+
+.contactMessageInput {
+    font-size: 1.75em;
+    font-family: 'Raleway', cursive;
+    color: #ffffff;
+    margin:0;
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    background-color: #DCD260;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    margin-top: 4%;
+    border-radius:40px/55%;
+}
+
+.submitButton {
+    background-color: #3A2A65;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: 'Overlock SC', cursive;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    margin-top: 4%;
+    border-radius:40px/55%;
+    max-width: 20%;
+    
+}
+
+.socialsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    justify-content: flex-start;
+    width: 45%;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    width: 112%;
+    background-color: #DCD260;
+    border-radius: 10% 0% 0% 10%;
+}
+
+.contactRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.contactIcon {
+    width: 5%;
+    padding-left: 10%;
+    padding-right: 2%;
+    aspect-ratio: 1/1;
+}
+
+.contactInfoText {
+    font-size: 1.75em;
+    font-family: 'Raleway', cursive;
+    color: #000000;
+    margin:0;
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+    padding-bottom: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    
+}
+
+.socialsTitle {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    z-index: 100;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-shadow: 2px 2px #DCD260;
+    padding-left: 10%;
+}

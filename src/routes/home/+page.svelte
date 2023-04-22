@@ -142,3 +142,73 @@
 
 <!--End Gallery-->
 
+<!--Hours-->
+<div class = 'hoursDiv'>
+    <div class = 'hoursTitleDiv'>
+        <h1 class = 'hoursTitle'>Hours</h1>
+    </div>
+    <div class = 'openDiv'>
+        <p class = 'openText'>We are currently <span style = 'color: green'>OPEN</span></p>
+    </div>
+    <div class = 'closingTimeDiv'>
+        <p class = 'closingTimeText'>We close in 2 hours and 30 minutes</p>
+    </div>
+    <div class = 'hoursMainContainer'>
+        <div class = 'listedHours'>
+            <h3 class = 'hoursListTitle'>Hours</h3>
+            <p class = 'hoursListItem'>MONDAY CLOSED</p>
+            <p class = 'hoursListItem'>TUESDAY 11:30AM - 3PM • 5PM - 10PM</p>
+            <p class = 'hoursListItem'>WEDNESDAY 11:30AM - 3PM • 5PM - 10PM</p>
+            <p class = 'hoursListItem'>THURSDAY 11:30AM - 3PM • 5PM - 10PM</p>
+            <p class = 'hoursListItem'>FRIDAY 11:30AM - 3PM • 5PM - 10PM</p>
+            <p class = 'hoursListItem'>SATURDAY 5PM - 10PMSUNDAY 5PM - 10PM</p>
+        </div>
+        <div class = 'reservationDiv'>
+            <a class = 'reservationButton' target="_blank" href = 'https://www.opentable.com/restref/client/?rid=104173&restref=104173&partysize=2&datetime=2023-04-22T19%3A00&lang=en-US&r3uid=GHFjTIxnu&color=1&corrid=4248193b-4765-4d6a-a98d-5416075ff1af'>Book A Table</a>
+        </div>
+    </div>
+    <div class = 'locationDiv'>
+        <h3 class = 'locationTitle'>Location</h3>
+        <p class = 'locationText'>108 W. 2nd Street, Downtown Los Angeles</p>
+    </div>
+</div>
+
+<!--End Hours-->
+
+<!--Contact-->
+<div class = 'contactDiv'>
+    <div class = 'contactContainer'>
+        <div class = 'contactFormDiv'>
+            <h1 class = 'contactTitle'>Contact</h1>
+            <form class = 'formDiv'>
+                <input class = 'contactInput' type = 'text' placeholder = 'Your Name'>
+                <input class = 'contactInput' type = 'email' placeholder = 'Your Email'>
+                <textarea class = 'contactMessageInput' placeholder = 'Your Message'></textarea>
+                <button class = 'submitButton'>Send</button>
+            </form>
+        </div>
+        <div class = 'socialsDiv'>
+            <div class = 'contactBox'>
+                <h3 class = 'socialsTitle'>SOCIALS</h3>
+                <div class = 'contactRow'>
+                    <img class = 'contactIcon' src = '/phoneIcon.png' alt = 'Phone Icon'>
+                    <p class = 'contactInfoText'>(213) 221 - 7466</p>
+                </div>
+                <div class = 'contactRow'>
+                    <img class = 'contactIcon' src = '/instagramIcon.png' alt = 'Instagram Icon'>
+                    <p class = 'contactInfoText'>@badmaashla</p>
+                </div>
+                <div class = 'contactRow'>
+                    <img class = 'contactIcon' src = '/emailIcon.png' alt = 'Email Icon'>
+                    <p class = 'contactInfoText'>info@badmaashla.com</p>
+                </div>
+                <div class = 'contactRow'>
+                    <img class = 'contactIcon' src = '/twitterIcon.png' alt = 'Twitter Icon'>
+                    <p class = 'contactInfoText'>@BadmaashLA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Contact-->
