@@ -5,6 +5,6 @@
 <style>
 </style>
 
-<body class = 'aboutBody'>
+<div class = 'aboutBody'>
 
-</body>
+</div>
