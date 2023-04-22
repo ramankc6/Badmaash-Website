@@ -21,6 +21,9 @@ html, body {
     padding-right: 4%;
     padding-top: 2%;
     z-index: 100;
+    /* position: fixed;
+    width: 90%;
+    align-self: center; */
 }
 
 
@@ -50,7 +53,9 @@ html, body {
 
 /* Home Page */
 
-
+.homeDiv {
+    background-color: #DCD260;
+}
 
 .homeTextContainer {
     padding-top: 12%;
@@ -61,6 +66,7 @@ html, body {
     width: 50%;
     z-index: 100;
     padding-left: 2%;
+    padding-bottom: 27%;
 }
 
 .homeText {
@@ -104,5 +110,151 @@ html, body {
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+}
+
+.aboutDiv {
+    background-image: url("/woodBackground.png");
+    margin-top: 0;
+    background-size: cover;
+    background-position: top;
+}
+
+.heritageTitleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.heritageTitle {
+    font-size: 4em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    text-shadow: 2px 2px #000000;
+}
+
+.heritageTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.heritageText {
+    font-size: 2em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 70%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-shadow: 2px 2px #000000;
+}
+
+
+.heritageImage {
+    max-width: 100%;
+    max-height: 40%;
+    overflow: hidden;
+    object-fit: scale-down;
+}
+
+.ownersTitleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.ownersTitleText {
+    font-size: 4em;
+    font-family: 'Overlock SC', cursive;
+    color: #FFFFFF;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    text-align: center;
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+.ownersImageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 7%;
+}
+
+.ownersImageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+.ownersImage {
+    aspect-ratio: 1/1;
+    max-width: 100%;
+}
+
+.ownersName {
+    font-size: 2em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+.quoteTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.quoteText {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 70%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    text-shadow: 2px 2px #000000;
+}
+
+.quoteAuthorDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    width: 80%;
+}
+
+.quoteAuthorText {
+    font-size: 3em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    z-index: 100;
+    padding-top: 2%;
+    text-shadow: 2px 2px #000000;
 }
 
