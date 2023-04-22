@@ -44,12 +44,13 @@
         <h1  id = 'homeText3'>heart of LA</h1>
         </div>
     </div>
-    <!--Home-->
     <div class = 'homeImageContainer'>
         <img class = 'homeImage' src = '/homeFood.png' alt = 'Home Food'>
     </div>
 </div>
+<!--End Home-->
 
+<!--About-->
 <div class = 'aboutDiv'>
     <div class = 'heritageTitleDiv'>
         <h1 class = 'heritageTitle'>Our Heritage</h1>
@@ -90,3 +91,54 @@
         <p class = 'quoteAuthorText'>- Nakul Mahendro</p>
     </div>
 </div>
+
+<!--End About-->
+
+<!--Menu-->
+<div class = 'menuDiv'>
+    <div  class = 'menuTitleDiv'>
+        <h1 class = 'menuTitle'>Menu</h1>
+    </div>
+    <div class = 'menuOptions'>
+    </div>
+</div>
+
+<!--End Menu-->
+
+<!--Gallery-->
+
+<div class = 'galleryDiv'>
+    <div class = 'galleryTitleDiv'>
+        <h1 class = 'galleryTitle'>Gallery</h1>
+    </div>
+    <div class = 'galleryImagesContainer'>
+        <div class = 'galleryImagesRight'>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage1.png' alt = 'Gallery 1'>
+            </div>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage2.png' alt = 'Gallery 1'>
+            </div>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage3.png' alt = 'Gallery 1'>
+            </div>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage4.png' alt = 'Gallery 1'>
+            </div>
+        </div>
+        <div class = 'galleryImagesLeft'>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage5.png' alt = 'Gallery 1'>
+            </div>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage6.png' alt = 'Gallery 1'>
+            </div>
+            <div>
+                <img class = 'galleryImage' src = '/galleryImage7.png' alt = 'Gallery 1'>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Gallery-->
+

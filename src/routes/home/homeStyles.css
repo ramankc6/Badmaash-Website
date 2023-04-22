@@ -112,6 +112,8 @@ html, body {
     object-fit: cover;
 }
 
+/* About Page */
+
 .aboutDiv {
     background-image: url("/woodBackground.png");
     margin-top: 0;
@@ -255,6 +257,115 @@ html, body {
     margin:0;
     z-index: 100;
     padding-top: 2%;
+    text-shadow: 2px 2px #000000;
+}
+
+
+/* Menu Page */
+
+.menuDiv {
+    background-image: url("/woodBackground.png");
+    margin-top: 0;
+    background-size: cover;
+    background-position: top;
+}
+
+.menuTitleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.menuTitle {
+    font-size: 4em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    text-shadow: 2px 2px #000000;
+}
+
+/* Gallery Page */
+
+.galleryDiv {
+    background-image: url("/woodBackground.png");
+    margin-top: 0;
+    background-size: cover;
+    background-position: top;
+}
+
+.galleryTitleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.galleryTitle {
+    font-size: 4em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
+    text-shadow: 2px 2px #000000;
+}
+
+.galleryImagesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 7%;
+}
+
+.galleryImagesRight,
+.galleryImagesLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.galleryImage {
+    max-width: 100%;
+    max-height: 50%;
+    overflow: hidden;
+    object-fit: scale-down;
+}
+
+/* Hours Page */
+
+.hoursDiv {
+    background-image: url("/woodBackground.png");
+    margin-top: 0;
+    background-size: cover;
+    background-position: top;
+}
+
+.hoursTitleDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.hoursTitle {
+    font-size: 4em;
+    font-family: 'Overlock SC', cursive;
+    color: #000000;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding-top: 5%;
     text-shadow: 2px 2px #000000;
 }
 
