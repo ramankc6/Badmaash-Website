@@ -15,20 +15,21 @@ This is what the planning board looked like:\
 
 I want split this project into 3 parts. Design, Code and Test. Today was the first design day. I started by contacting the owners of the restaurant to understand the "vibe" that the restaurant has. I got a chance to talk to the owner and he told me that the restaurant is very causal but also very classy. He also told me that the restaurant is very family friendly and that they have a lot of kids that come in. He also told me about the history behind the restaurant and gruelling journey of taking a risk and gambling on yourself to achive the American dream. I was genuinely really touched by this and was more excited than ever to get started on this project!\
 \
-I realized that my biggest weakness was design since I am color blind and I have a hard time picking out colors that look good together. I decided to use a color palette generator to help me with this. I found a really good one called [Coolors](https://colorhunt.co/). I also decided to create the design on Figma before developing it so that I could keep my code base organized.\
+I realized that my biggest weakness was design since I am color blind and I have a hard time picking out colors that look good together. I decided to use a color palette generator to help me with this. I found a really good one called [CoolorHunt](https://colorhunt.co/). I also decided to create the design on Figma before developing it so that I could keep my code base organized.\
 \
-My first itteration was admittedly really bad. No matter what, I was not able to make it look very visually apealing. I then decided to first put my focus on funtionality and then go back and make it look better. This allowed me to make more steady progress.\
+My first itteration was admittedly really bad. No matter what, I was not able to make it look very visually apealing. I then decided to first put my focus on funtionality and then go back and make it look better. This allowed me to make more steady progress.
 \
 This is what it looked like after the first itteration:\
 \
 ![FirstItteration](/static/firstFigmaItteration.png?raw=true "First Figma Itteration")
 
 This is what it looked like after I went back and make it look better:\
-
+\
 ![SecondItteration](/static/secondFigmaItteration.png?raw=true "Second Figma Itteration")
 
 I think what really helped me was creating a Pinterest board of websites that I liked and then using that as a reference. I also used a lot of the design principles that I learned from watching YouTube videos.\
 \
 I can't want to start coding tomorrow!\
+\
 
 ### Day 3
