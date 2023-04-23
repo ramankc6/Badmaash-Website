@@ -98,7 +98,19 @@
     <div  class = 'menuTitleDiv'>
         <h1 class = 'menuTitle'>Menu</h1>
     </div>
-    <div class = 'menuOptions'>
+    <div class = 'menuContainer'>
+        <div class = 'swipeDiv'>
+            <img class = 'swipeImage' src = '/leftArrow.png' alt = 'Swipe Left'>
+        </div>
+        <div class = 'menuContent'>
+            <p class = 'menuTypeText'>INDIAN STREET FOOD</p>
+            <p class = 'menuText'><b>Indian Pickles (gharwalla achaar)</b><br><span class = 'itemDisc'>seasonal veggies pickled in house with indian spices & aromatics</span><br><br>
+            <b>Onion Fritters (onion bhajjia)</b><br><span class = 'itemDisc'>dredged in a spiced chickpea batter - fried golden brown - served with tamarind chutney</span><br><br>
+            <b>Punjabi Fish-Fry (machhi amritsari)</b><br><span class = 'itemDisc'>flaky catfish fried crisp in chickpea batter spiced with carom seed, paprika & dried mango dust</span><br><br></p>
+        </div>
+        <div class = 'swipeDiv'>
+            <img class = 'swipeImage' src = '/rightArrow.png' alt = 'Swipe Left'>
+        </div>
     </div>
 </div>
 
