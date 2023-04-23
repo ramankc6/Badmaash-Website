@@ -33,3 +33,16 @@ I can't want to start coding tomorrow!\
 \
 
 ### Day 3
+Okay so to get started on development, I decided to use SvelteKit. SvelteKit basically just sets up a Svelte environment for me.\
+\
+I made the landing page first and then ran into an issue. Svelte was having alot of trouble switching between pages. So instead I decided to have a "loading page" and then the enitre website would be on one page. It will be easy to navigate through the website using the navigation bar and page ancors\
+\
+I made it a point to comment as much as possible to have devider. This later proved really helpful when I was trying to debug.\
+\
+I had to redo the design ALOT of times. Everything that seemed to look good before just on my Figma just didn't look good on the website. I had to redo the design atleast 5 times. Though most of the sections are kind of similar, I completly redid the menu section. I think it was worth it though because I am really happy with how it turned out. Instead of "onHover" I decided to let the user swipe though the different menu catagories\
+\
+I have only used HTML and CSS so far. I wanted to get the design done before I started using JavaScript. I am going to start using JavaScript tomorrow. I have so many ideas of cool annimations and features I want to add but it's going to be a race against time to get it done.\
+\
+[Here](https://www.youtube.com/watch?v=pXit3cEKdjQ) is a video of the website about half way though the redesign.\
+\
+[Here](https://youtu.be/VVVx523iWxY) is a video of the website after most of the redesign. I don't know if this will reseble the final product at the end but I am proud of it.\
