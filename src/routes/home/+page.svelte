@@ -439,19 +439,19 @@ function pageScroll() {
             <div class = 'contactBox'>
                 <h3 class = 'socialsTitle'>SOCIALS</h3>
                 <div class = 'contactRow'>
-                    <img class = 'contactIcon' src = '/phoneIcon.png' alt = 'Phone Icon'>
+                    <a class = 'iconButtons' href = 'tel:213221766' target="_blank"><img class = 'contactIcon' src = '/phoneIcon.png' alt = 'Phone Icon'></a>
                     <p class = 'contactInfoText'>(213) 221 - 7466</p>
                 </div>
                 <div class = 'contactRow'>
-                    <img class = 'contactIcon' src = '/instagramIcon.png' alt = 'Instagram Icon'>
+                    <a class = 'iconButtons' href = 'https://www.instagram.com/badmaashla/' target="_blank"><img class = 'contactIcon' src = '/instagramIcon.png' alt = 'Instagram Icon'></a>
                     <p class = 'contactInfoText'>@badmaashla</p>
                 </div>
                 <div class = 'contactRow'>
-                    <img class = 'contactIcon' src = '/emailIcon.png' alt = 'Email Icon'>
+                    <a class = 'iconButtons' href = "info@badmaashla.com" target="_blank"><img class = 'contactIcon' src = '/emailIcon.png' alt = 'Email Icon'></a>
                     <p class = 'contactInfoText'>info@badmaashla.com</p>
                 </div>
                 <div class = 'contactRow'>
-                    <img class = 'contactIcon' src = '/twitterIcon.png' alt = 'Twitter Icon'>
+                    <a class = 'iconButtons' href = 'https://twitter.com/BadmaashLA' target="_blank"><img class = 'contactIcon' src = '/twitterIcon.png' alt = 'Twitter Icon'></a>
                     <p class = 'contactInfoText'>@BadmaashLA</p>
                 </div>
             </div>
