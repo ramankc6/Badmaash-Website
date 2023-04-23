@@ -4,6 +4,7 @@
 // Imports
 import "./homeStyles.css"
 import { onMount } from "svelte"
+import { fade } from "svelte/transition"
 
 //Declare Variables
 let userWidth
@@ -28,7 +29,53 @@ let statusColor = 'black'
 let displayHours = 0
 let displayMinutes = 0
 
+let menuIndex = 0
 
+//Menu Declares
+const menuTitles = ['INDIAN STREET FOOD', 'HANDMADE PUNJABI SAMOSAS', 'TIKKAS & KABAABS', '#BADMAASHLA FAVES', 'TRADITIONAL INDIAN SELECTIONS', 'INDIAN CONDIMENTS, FRESH BREADS & SIDES']
+const fullMenu = [[
+    {name: 'Indian Pickles (gharwalla achaar)', disc: 'seasonal veggies pickled in house with indian spices & aromatics'},
+    {name: 'Onion Fritters (onion bhajjia)', disc: 'dredged in a spiced chickpea batter - fried golden brown - served with tamarind chutney'},
+    {name: 'Punjabi Fish-Fry (machhi amritsari)', disc: 'flaky catfish fried crisp in chickpea batter spiced with carom seed, paprika & dried mango dust'}
+],[
+    {name: 'The Traditional', disc: 'potato & sweet peas with coriander seeds, roasted cumin & ginger'},
+    {name: 'Butter Chicken', disc: 'the most popular punjabi curry in deep fried-awesomeness'}
+],[
+    {name: 'Badass Chicken Tikka', disc: 'traditional “dhaba style” preparation with yogurt ginger, dried fenugreek & mustard oil'},
+    {name: 'Market Vegetables', disc: 'seasonal vegetables marinated with garlic, turmeric & tandoori spices - served with a smoked tomato chutney'}
+],[
+    {name: 'Badmaash Fried Chicken', disc: 'spice-battered chicken double-fried & dusted with paprika masala - served with serrano-cream sauce'},
+    {name: 'Chicken Tikka Poutine', disc: 'canadian eh!? masala fries topped with cheese curds, doused in piping hot beef gravy, all topped with tandoori chicken tikka & cilantro'},
+    {name: 'Channa Masala Poutine', disc: 'masala fries topped with cheese curds, and smothered with our Punjabi chickpeas - all topped with pickled onion & cilantro (ask for it vegan without the cheese)'},
+    {name: 'Slow Cooked Beef Short Rib', disc: 'grass-fed & hormone-free, cooked ‘slow & low’ in a curry of caramelized onion, turmeric, cumin & red wine'},
+    {name: 'Badmaash Broccolini', disc: 'marinated with mustard oil, garlic & chili, dusted with spiced chickpea flour & roasted until crispy'},
+    {name: 'Chili Cheese Naan', disc: 'our naan dough stuffed with strong white cheddar, serrano chilies & cilantro - cooked in the tandoor'},
+    {name: 'Masala Potato Fries', disc: 'with parpika spiced mayo'}
+],[
+    {name: 'Butter Chicken (murgh makhani)', disc: 'indian wedding classic; 48-hour marinade of yogurt & spices, charred in the tandoor then finished in a creamy tomato curry flavored with fenugreek'},
+    {name: 'Chicken Tikka Masala', disc: 'charred tandoori chicken sauteed with red onion, green & red peppers sauteed in a tomato curry spiced with serrano chilies, fresh ginger & cilantro'},
+    {name: 'Goan Pork Curry', disc: 'sweet, sour, spicy! pork shoulder slow braised with fenugreek seeds, jaggery & fresh tamarind'},
+    {name: 'Ghost Chili Lamb Vindaloo', disc: 'SPICY!! - juicy lamb & potato slow braised in a spicy curry of ‘bhoot jolokia’, serrano & red chilies'},
+    {name: 'Good Ol’ Saag Paneer', disc: 'mom’s recipe of baby spinach sautéed with tomato, onion, ‘garam masala’ & indian paneer cheese'},
+    {name: 'Homestyle Punjabi ’Sabzi’', disc: 'seasonal market vegetables cooked with homemade spice mixes & masalas - please ask your server'},
+    {name: 'Punjabi Chickpeas (channa masala)', disc: 'garbanzo beans, tomato & onion - stewed in warm spices & aromatics - topped with pickled onion'},
+    {name: 'Creamy Black Lentils (daal makhani)', disc: '24-hour slow cook; black lentils & kidney beans with ginger, garlic, plum tomato & butter'},
+    {name: 'South Indian Fish Konkani', disc: 'market fresh fish stewed in a bright curry of tomato & coconut milk, spiced with mustard seed'},
+    {name: 'Mixed Mushroom Vindaloo', disc: 'ghost chili! - field mushrooms, onions & potato cooked in a spicy curry of mixed chilies'}
+
+],[
+    {name: '5 Pepper Hot Sauce - “Boss Sauce”', disc: ''},
+    {name: 'Spiced Mango Chutney', disc: ''},
+    {name: 'Smoked Tomato Chutney', disc: ''},
+    {name: '“OG” Masala Onions & Chilies', disc: ''},
+    {name: 'Cucumber Yogurt Raita', disc: ''},
+    {name: 'Rosemary Naan', disc: ''},
+    {name: 'Tandoori Naan', disc: ''},
+    {name: 'Tandoori Roti', disc: ''},
+    {name: 'Basmati Pilaf', disc: ''}
+]
+
+]
 //onMount Functions (Runs when page is loaded)
 onMount(async () => {
     pageScroll()
@@ -36,6 +83,24 @@ onMount(async () => {
 })
 
 //Functions
+
+// Menu Funtion
+
+function swipe (direction) {
+    if (direction == 'left') {
+        if (menuIndex == 5) {
+            menuIndex = 0
+        } else {
+            menuIndex = menuIndex + 1
+        }
+    } else if (direction == 'right') {
+        if (menuIndex == 0) {
+            menuIndex = 5
+        } else {
+            menuIndex = menuIndex - 1
+        }
+    }
+}
 
 //Figure Out The Time Till Close
 function timeTillClose () {
@@ -270,16 +335,18 @@ function pageScroll() {
     </div>
     <div class = 'menuContainer'>
         <div class = 'swipeDiv'>
-            <img class = 'swipeImage' src = '/leftArrow.png' alt = 'Swipe Left'>
+            <button class = 'swipeButton' on:click={() => swipe('right')}><img class = 'swipeImage' src = '/leftArrow.png' alt = 'Swipe Left'></button>
         </div>
+        {#key menuTitles[menuIndex]}
         <div class = 'menuContent'>
-            <p class = 'menuTypeText'>INDIAN STREET FOOD</p>
-            <p class = 'menuText'><b>Indian Pickles (gharwalla achaar)</b><br><span class = 'itemDisc'>seasonal veggies pickled in house with indian spices & aromatics</span><br><br>
-            <b>Onion Fritters (onion bhajjia)</b><br><span class = 'itemDisc'>dredged in a spiced chickpea batter - fried golden brown - served with tamarind chutney</span><br><br>
-            <b>Punjabi Fish-Fry (machhi amritsari)</b><br><span class = 'itemDisc'>flaky catfish fried crisp in chickpea batter spiced with carom seed, paprika & dried mango dust</span><br><br></p>
+            <p class = 'menuTypeText' in:fade>{menuTitles[menuIndex]}</p>
+            {#each fullMenu[menuIndex] as item}
+            <p class = 'menuText' in:fade><b>{item.name}</b><br><span class = 'itemDisc'>{item.disc}</span><br></p>
+            {/each}
         </div>
+        {/key}
         <div class = 'swipeDiv'>
-            <img class = 'swipeImage' src = '/rightArrow.png' alt = 'Swipe Left'>
+            <button class = 'swipeButton' on:click={() => swipe('left')}><img class = 'swipeImage' src = '/rightArrow.png' alt = 'Swipe Right'></button>
         </div>
     </div>
 </div>
