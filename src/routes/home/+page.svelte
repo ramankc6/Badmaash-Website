@@ -34,18 +34,17 @@
 
     <!--Home-->
     <div class = 'homeTextContainer'>
+        <img src = '/landingLogo.png' alt = 'Landing Logo' class = 'landingLogo'>
+
         <div class = 'homeText'>
-        <p id = 'homeText1'>A taste of India</p>
+        <p id = 'homeText1'>A taste of India in the heart of LA</p>
         </div>
-        <div class = 'homeText'>
+        <!-- <div class = 'homeText'>
         <p id = 'homeText2'>in the</p>
         </div>
         <div class = 'homeText'>
         <h1  id = 'homeText3'>heart of LA</h1>
-        </div>
-    </div>
-    <div class = 'homeImageContainer'>
-        <img class = 'homeImage' src = '/homeFood.png' alt = 'Home Food'>
+        </div> -->
     </div>
 </div>
 <!--End Home-->
