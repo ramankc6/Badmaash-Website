@@ -1,6 +1,74 @@
 
-<script>
-    import "./homeStyles.css"
+<script lang = 'js'>
+
+// Imports
+import "./homeStyles.css"
+import { onMount } from "svelte"
+
+//Declare Variables
+let userWidth
+let y = 0
+let about
+let menu
+let gallery
+let hours
+let contact
+let navContainer
+
+//onMount Functions (Runs when page is loaded)
+onMount(async () => {
+    pageScroll()
+})
+
+//Functions
+
+//Nav Bar
+function navigator (buttonPressed) {
+    if (buttonPressed == 'about') {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+            top: about.offsetTop,
+            behavior: 'smooth'
+        })})
+    } else if (buttonPressed == 'menu') {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+            top: menu.offsetTop,
+            behavior: 'smooth'
+        })})
+    } else if (buttonPressed == 'gallery') {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+            top: gallery.offsetTop,
+            behavior: 'smooth'
+        })})
+    } else if (buttonPressed == 'hours') {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+            top: hours.offsetTop,
+            behavior: 'smooth'
+        })})
+    } else if (buttonPressed == 'contact') {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+            top: contact.offsetTop,
+            behavior: 'smooth'
+        })})
+    }
+}
+
+//Scrolling
+function pageScroll() {
+    if (y < about.offsetTop) {
+        navContainer.style.backgroundColor = '#F97B22'
+    } else if (y > about.offsetTop && y < menu.offsetTop) {
+        navContainer.style.backgroundColor = '#F3DEBA'
+    } else if (y > menu.offsetTop) {
+        navContainer.style.backgroundColor = '#675D50'
+    }
+    setTimeout(pageScroll, 0);
+
+}
 </script>
 
 <style>
@@ -10,24 +78,24 @@
 
 <div class = 'homeDiv'>
     <!-- Nav Bar-->
-    <div class = 'navContainer'>
+    <div class = 'navContainer' bind:this = '{navContainer}'>
         <div class = 'navItem'>
             <a href = '/'><img src = 'logo.png' alt = 'Logo'></a>
         </div>
         <div class = 'navItem'>
-            <a href = '/about'>About</a>
+            <a href="#" on:click={() => navigator('about')}>About</a>
         </div>
         <div class = 'navItem'>
-            <a href = '/menu'>Menu</a>
+            <a href="#" on:click={() => navigator('menu')}>Menu</a>
         </div>
         <div class = 'navItem'>
-            <a href = '/gallery'>Gallery</a>
+            <a href="#" on:click={() => navigator('gallery')}>Gallery</a>
         </div>
         <div class = 'navItem'>
-            <a href = '/hours'>Hours</a>
+            <a href="#" on:click={() => navigator('hours')}>Hours</a>
         </div>
         <div class = 'navItem'>
-            <a href = '/contact'>Contact</a>
+            <a href="#" on:click={() => navigator('contact')}>Contact</a>
         </div>
     </div>
     <!-- End Nav Bar-->
@@ -50,7 +118,7 @@
 <!--End Home-->
 
 <!--About-->
-<div class = 'aboutDiv'>
+<div class = 'aboutDiv' bind:this = '{about}'>
     <div class = 'heritageTitleDiv'>
         <h1 class = 'heritageTitle'>Our Heritage</h1>
     </div>
@@ -94,7 +162,7 @@
 <!--End About-->
 
 <!--Menu-->
-<div class = 'menuDiv'>
+<div class = 'menuDiv'  bind:this = '{menu}'>
     <div  class = 'menuTitleDiv'>
         <h1 class = 'menuTitle'>Menu</h1>
     </div>
@@ -118,7 +186,7 @@
 
 <!--Gallery-->
 
-<div class = 'galleryDiv'>
+<div class = 'galleryDiv'  bind:this = '{gallery}'>
     <div class = 'galleryTitleDiv'>
         <h1 class = 'galleryTitle'>Gallery</h1>
     </div>
@@ -154,7 +222,7 @@
 <!--End Gallery-->
 
 <!--Hours-->
-<div class = 'hoursDiv'>
+<div class = 'hoursDiv'  bind:this = '{hours}'>
     <div class = 'hoursTitleDiv'>
         <h1 class = 'hoursTitle'>Hours</h1>
     </div>
@@ -187,7 +255,7 @@
 <!--End Hours-->
 
 <!--Contact-->
-<div class = 'contactDiv'>
+<div class = 'contactDiv'  bind:this = '{contact}'>
     <div class = 'contactContainer'>
         <div class = 'contactFormDiv'>
             <h1 class = 'contactTitle'>Contact</h1>
@@ -223,3 +291,6 @@
 </div>
 
 <!--End Contact-->
+
+
+<svelte:window bind:scrollY={y} bind:innerWidth={userWidth} />

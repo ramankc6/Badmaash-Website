@@ -6,6 +6,7 @@
 
 /* Nav Bar */
 
+
 html, body {
     height: 100%;
     margin: 0;
@@ -21,7 +22,7 @@ html, body {
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 0%;
-    z-index: 100;
+    z-index: 1000;
     opacity: 0.8;
     width: 92%;
     position: fixed;
