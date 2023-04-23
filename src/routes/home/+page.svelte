@@ -62,7 +62,7 @@
             all over India, each with its own unique flavor profile.</p>
     </div>
     <div class = 'heritageImageDiv'>
-        <img class = 'heritageImage' src = '/heritageImage.png' alt = 'Heritage'>
+        <img class = 'heritageImage' src = '/heritageImage.jpeg' alt = 'Heritage'>
     </div>
     <div class = 'ownersTitleDiv'>
         <h1 class = 'ownersTitleText'>A Culinary Journey Through Generations.</h1>
