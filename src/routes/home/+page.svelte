@@ -243,7 +243,7 @@ function pageScroll() {
 </style>
 
 
-<div class = 'homeDiv'>
+<div class = 'homeDiv' in:fade="{{duration:600}}">
     <!-- Nav Bar-->
     <div class = 'navContainer' bind:this = '{navContainer}'>
         <div class = 'navItem'>
