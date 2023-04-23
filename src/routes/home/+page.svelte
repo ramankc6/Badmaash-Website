@@ -14,13 +14,115 @@ let gallery
 let hours
 let contact
 let navContainer
+let time = new Date();
+$: day = time.getDay();
+$: hour = time.getHours();
+$: minutes = time.getMinutes();
+
+let hoursTillOpen = 0
+let minutesTillOpen = 0
+
+let openStatus = 'Something is Wrong'
+let inverse = 'Something is Wrong'
+let statusColor = 'black'
+let displayHours = 0
+let displayMinutes = 0
+
 
 //onMount Functions (Runs when page is loaded)
 onMount(async () => {
     pageScroll()
+    timeTillClose()
 })
 
 //Functions
+
+//Figure Out The Time Till Close
+function timeTillClose () {
+    if (day == 0) {
+        // Sunday
+        if (hour >= 17 && hour < 22) {
+            openStatus = 'OPEN'
+            hoursTillOpen = (22 - hour) - 1
+            minutesTillOpen = 60 - minutes
+        } else if (hour >= 22) {
+            openStatus = 'CLOSED'
+            hoursTillOpen = 24 - hour + 11
+            minutesTillOpen = minutes - 30
+            if (minutesTillOpen < 0) {
+                minutesTillOpen = 60 + minutesTillOpen
+                hoursTillOpen = hoursTillOpen - 1
+            }
+            hoursTillOpen = hoursTillOpen + 24
+        } else if (hour < 17) {
+            openStatus = 'CLOSED'
+            hoursTillOpen = 17 - hour - 1
+            minutesTillOpen = 60 - minutes
+            if (minutesTillOpen < 0) {
+                minutesTillOpen = 60 + minutesTillOpen
+                hoursTillOpen = hoursTillOpen - 1
+            }
+        }
+    } else if (day == 1) {
+        // Monday
+        openStatus = 'CLOSED'
+        hoursTillOpen = 24 - hour + 11
+        minutesTillOpen = minutes - 30
+        if (minutesTillOpen < 0) {
+            minutesTillOpen = 60 + minutesTillOpen
+            hoursTillOpen = hoursTillOpen - 1
+        }
+    } else if (day >= 2 && day <= 5) {
+        // Tuesday - Friday
+        if (hour >= 11 && hour < 15) {
+            openStatus = 'OPEN';
+            hoursTillOpen = (15 - hour) - 1;
+            minutesTillOpen = 60 - minutes;
+        } else if (hour >= 17 && hour < 22) {
+            openStatus = 'OPEN';
+            hoursTillOpen = (22 - hour) - 1;
+            minutesTillOpen = 60 - minutes;
+        } else if (hour >= 15 && hour < 17) {
+            openStatus = 'CLOSED';
+            hoursTillOpen = 17 - hour - 1;
+            minutesTillOpen = 60 - minutes;
+        } else if (hour < 11) {
+            openStatus = 'CLOSED';
+            hoursTillOpen = 11 - hour - 1;
+            minutesTillOpen = 30 - minutes;
+        } else {
+            openStatus = 'CLOSED';
+            hoursTillOpen = 24 - hour + 11;
+            minutesTillOpen = 30 - minutes;
+        }
+    } else if (day == 6) {
+        // Saturday
+        if (hour >= 17 && hour < 22) {
+            openStatus = 'OPEN';
+            hoursTillOpen = (22 - hour) - 1;
+            minutesTillOpen = 60 - minutes;
+        } else {
+            openStatus = 'CLOSED';
+            hoursTillOpen = 17 - hour - 1;
+            minutesTillOpen = 60 - minutes;
+        }
+    }
+    if (minutesTillOpen < 0) {
+        minutesTillOpen = 60 + minutesTillOpen;
+        hoursTillOpen = hoursTillOpen - 1;
+    }
+
+    if (openStatus == 'OPEN') {
+        inverse = 'close'
+        statusColor = 'green'
+    } else {
+        inverse = 'open'
+        statusColor = 'red'
+    }
+    displayHours = hoursTillOpen
+    displayMinutes = minutesTillOpen
+    setTimeout(timeTillClose, 0);
+}
 
 //Nav Bar
 function navigator (buttonPressed) {
@@ -227,10 +329,10 @@ function pageScroll() {
         <h1 class = 'hoursTitle'>Hours</h1>
     </div>
     <div class = 'openDiv'>
-        <p class = 'openText'>We are currently <span style = 'color: green'>OPEN</span></p>
+        <p class = 'openText'>We are currently <span style = 'color: {statusColor}'>{openStatus}</span></p>
     </div>
     <div class = 'closingTimeDiv'>
-        <p class = 'closingTimeText'>We close in 2 hours and 30 minutes</p>
+        <p class = 'closingTimeText'>We {inverse} in {displayHours} hours and {displayMinutes} minutes</p>
     </div>
     <div class = 'hoursMainContainer'>
         <div class = 'listedHours'>
