@@ -349,6 +349,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 70%;
 }
 .menuTypeText {
     font-size: 2em;
@@ -387,6 +388,22 @@ html, body {
     text-align: center;
     opacity: 0.8;
 }
+
+.hoverImage {
+    max-width: 23.131em;
+    max-height:13em;
+    /* aspect-ratio: 1/1; */
+}
+
+.hoverImageDiv {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
 /* Gallery Page */
 
 .galleryDiv {
@@ -437,6 +454,8 @@ html, body {
     max-height: 50%;
     overflow: hidden;
     object-fit: scale-down;
+    /* mix-blend-mode: overlay; */
+    transition: 0.1s;
 }
 
 /* Hours Page */

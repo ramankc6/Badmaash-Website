@@ -29,54 +29,36 @@ let inverse = 'Something is Wrong'
 let statusColor = 'black'
 let displayHours = 0
 let displayMinutes = 0
-
+let tempHover = false
+let hoverImg = "landingLogo.png"
 let menuIndex = 0
+let imgBlend = 'multiply'
 
 //Menu Declares
 const menuTitles = ['INDIAN STREET FOOD', 'HANDMADE PUNJABI SAMOSAS', 'TIKKAS & KABAABS', '#BADMAASHLA FAVES', 'TRADITIONAL INDIAN SELECTIONS', 'INDIAN CONDIMENTS, FRESH BREADS & SIDES']
-const fullMenu = [[
-    {name: 'Indian Pickles (gharwalla achaar)', disc: 'seasonal veggies pickled in house with indian spices & aromatics'},
-    {name: 'Onion Fritters (onion bhajjia)', disc: 'dredged in a spiced chickpea batter - fried golden brown - served with tamarind chutney'},
-    {name: 'Punjabi Fish-Fry (machhi amritsari)', disc: 'flaky catfish fried crisp in chickpea batter spiced with carom seed, paprika & dried mango dust'}
+let fullMenu = [[
+    {name: 'Indian Pickles (gharwalla achaar)', disc: 'seasonal veggies pickled in house with indian spices & aromatics', price: 4, hover: false, image: "A0.png"},
+    {name: 'Onion Fritters (onion bhajjia)', disc: 'dredged in a spiced chickpea batter - fried golden brown - served with tamarind chutney', price: 4, hover: false, image: "A1.png"},
+    {name: 'Punjabi Fish-Fry (machhi amritsari)', disc: 'flaky catfish fried crisp in chickpea batter spiced with carom seed, paprika & dried mango dust', price: 4, hover: false, image: "A2.png"}
 ],[
-    {name: 'The Traditional', disc: 'potato & sweet peas with coriander seeds, roasted cumin & ginger'},
-    {name: 'Butter Chicken', disc: 'the most popular punjabi curry in deep fried-awesomeness'}
+    {name: 'The Traditional', disc: 'potato & sweet peas with coriander seeds, roasted cumin & ginger' , price: 4, hover: false, image: "B0.png"},
+    {name: 'Butter Chicken', disc: 'the most popular punjabi curry in deep fried-awesomeness', price: 4, hover: false, image: "B1.png"}
 ],[
-    {name: 'Badass Chicken Tikka', disc: 'traditional “dhaba style” preparation with yogurt ginger, dried fenugreek & mustard oil'},
-    {name: 'Market Vegetables', disc: 'seasonal vegetables marinated with garlic, turmeric & tandoori spices - served with a smoked tomato chutney'}
+    {name: 'Badass Chicken Tikka', disc: 'traditional “dhaba style” preparation with yogurt ginger, dried fenugreek & mustard oil', price: 4, hover: false, image: "C0.png"},
+    {name: 'Market Vegetables', disc: 'seasonal vegetables marinated with garlic, turmeric & tandoori spices - served with a smoked tomato chutney', price: 4, hover: false, image: "C1.png"}
 ],[
-    {name: 'Badmaash Fried Chicken', disc: 'spice-battered chicken double-fried & dusted with paprika masala - served with serrano-cream sauce'},
-    {name: 'Chicken Tikka Poutine', disc: 'canadian eh!? masala fries topped with cheese curds, doused in piping hot beef gravy, all topped with tandoori chicken tikka & cilantro'},
-    {name: 'Channa Masala Poutine', disc: 'masala fries topped with cheese curds, and smothered with our Punjabi chickpeas - all topped with pickled onion & cilantro (ask for it vegan without the cheese)'},
-    {name: 'Slow Cooked Beef Short Rib', disc: 'grass-fed & hormone-free, cooked ‘slow & low’ in a curry of caramelized onion, turmeric, cumin & red wine'},
-    {name: 'Badmaash Broccolini', disc: 'marinated with mustard oil, garlic & chili, dusted with spiced chickpea flour & roasted until crispy'},
-    {name: 'Chili Cheese Naan', disc: 'our naan dough stuffed with strong white cheddar, serrano chilies & cilantro - cooked in the tandoor'},
-    {name: 'Masala Potato Fries', disc: 'with parpika spiced mayo'}
+    {name: 'Badmaash Fried Chicken', disc: 'spice-battered chicken double-fried & dusted with paprika masala - served with serrano-cream sauce', price: 4, hover: false, image: "D0.png"},
+    {name: 'Chicken Tikka Poutine', disc: 'canadian eh!? masala fries topped with cheese curds, doused in piping hot beef gravy, all topped with tandoori chicken tikka & cilantro', price: 4, hover: false, image: "D1.png"},
+    {name: 'Channa Masala Poutine', disc: 'masala fries topped with cheese curds, and smothered with our Punjabi chickpeas - all topped with pickled onion & cilantro (ask for it vegan without the cheese)', price: 4, hover: false, image: "D2.png"},
+    {name: 'Slow Cooked Beef Short Rib', disc: 'grass-fed & hormone-free, cooked ‘slow & low’ in a curry of caramelized onion, turmeric, cumin & red wine', price: 4, hover: false, image: "D3.png"},
 ],[
-    {name: 'Butter Chicken (murgh makhani)', disc: 'indian wedding classic; 48-hour marinade of yogurt & spices, charred in the tandoor then finished in a creamy tomato curry flavored with fenugreek'},
-    {name: 'Chicken Tikka Masala', disc: 'charred tandoori chicken sauteed with red onion, green & red peppers sauteed in a tomato curry spiced with serrano chilies, fresh ginger & cilantro'},
-    {name: 'Goan Pork Curry', disc: 'sweet, sour, spicy! pork shoulder slow braised with fenugreek seeds, jaggery & fresh tamarind'},
-    {name: 'Ghost Chili Lamb Vindaloo', disc: 'SPICY!! - juicy lamb & potato slow braised in a spicy curry of ‘bhoot jolokia’, serrano & red chilies'},
-    {name: 'Good Ol’ Saag Paneer', disc: 'mom’s recipe of baby spinach sautéed with tomato, onion, ‘garam masala’ & indian paneer cheese'},
-    {name: 'Homestyle Punjabi ’Sabzi’', disc: 'seasonal market vegetables cooked with homemade spice mixes & masalas - please ask your server'},
-    {name: 'Punjabi Chickpeas (channa masala)', disc: 'garbanzo beans, tomato & onion - stewed in warm spices & aromatics - topped with pickled onion'},
-    {name: 'Creamy Black Lentils (daal makhani)', disc: '24-hour slow cook; black lentils & kidney beans with ginger, garlic, plum tomato & butter'},
-    {name: 'South Indian Fish Konkani', disc: 'market fresh fish stewed in a bright curry of tomato & coconut milk, spiced with mustard seed'},
-    {name: 'Mixed Mushroom Vindaloo', disc: 'ghost chili! - field mushrooms, onions & potato cooked in a spicy curry of mixed chilies'}
-
-],[
-    {name: '5 Pepper Hot Sauce - “Boss Sauce”', disc: ''},
-    {name: 'Spiced Mango Chutney', disc: ''},
-    {name: 'Smoked Tomato Chutney', disc: ''},
-    {name: '“OG” Masala Onions & Chilies', disc: ''},
-    {name: 'Cucumber Yogurt Raita', disc: ''},
-    {name: 'Rosemary Naan', disc: ''},
-    {name: 'Tandoori Naan', disc: ''},
-    {name: 'Tandoori Roti', disc: ''},
-    {name: 'Basmati Pilaf', disc: ''}
+    {name: 'Butter Chicken (murgh makhani)', disc: 'indian wedding classic; 48-hour marinade of yogurt & spices, charred in the tandoor then finished in a creamy tomato curry flavored with fenugreek', price: 4, hover: false, image: "E0.png"},
+    {name: 'Chicken Tikka Masala', disc: 'charred tandoori chicken sauteed with red onion, green & red peppers sauteed in a tomato curry spiced with serrano chilies, fresh ginger & cilantro', price: 4, hover: false, image: "E1.png"},
+    {name: 'Goan Pork Curry', disc: 'sweet, sour, spicy! pork shoulder slow braised with fenugreek seeds, jaggery & fresh tamarind', price: 4, hover: false, image: "E2.png"},
+    {name: 'Ghost Chili Lamb Vindaloo', disc: 'SPICY!! - juicy lamb & potato slow braised in a spicy curry of ‘bhoot jolokia’, serrano & red chilies', price: 4, hover: false, image: "E3.png"},
 ]
-
 ]
+JSON.stringify(fullMenu)
 //onMount Functions (Runs when page is loaded)
 onMount(async () => {
     pageScroll()
@@ -87,16 +69,36 @@ onMount(async () => {
 
 // Menu Funtion
 
+function showImage (i) {
+    i = i + 0
+    tempHover = false
+    for (let y = 0; y < fullMenu[menuIndex].length; y++) { 
+        if (fullMenu[menuIndex][y].hover && y != i) {
+            tempHover = true
+        }
+    }
+    if (tempHover == false) {
+        imgBlend = 'normal'
+        hoverImg = fullMenu[menuIndex][i].image
+    }
+}
+
+function hideImage () {
+    imgBlend = 'multiply'
+    hoverImg = 'landingLogo.png'
+}
+
+
 function swipe (direction) {
     if (direction == 'left') {
-        if (menuIndex == 5) {
+        if (menuIndex == 4) {
             menuIndex = 0
         } else {
             menuIndex = menuIndex + 1
         }
     } else if (direction == 'right') {
         if (menuIndex == 0) {
-            menuIndex = 5
+            menuIndex = 4
         } else {
             menuIndex = menuIndex - 1
         }
@@ -339,11 +341,14 @@ function pageScroll() {
             <button class = 'swipeButton' on:click={() => swipe('right')}><img class = 'swipeImage' src = '/leftArrow.png' alt = 'Swipe Left'></button>
         </div>
         {#key menuTitles[menuIndex]}
-        <div class = 'menuContent'>
+        <div class = 'menuContent' on:mouseleave={()=> setTimeout(() => hideImage())}>
             <p class = 'menuTypeText' in:fade>{menuTitles[menuIndex]}</p>
-            {#each fullMenu[menuIndex] as item}
-            <p class = 'menuText' in:fade><b>{item.name}</b><br><span class = 'itemDisc'>{item.disc}</span><br></p>
+            {#each fullMenu[menuIndex] as item, i}
+            <p class = 'menuText' in:fade on:mouseenter={()=> showImage(Number(i))}><b>{item.name}</b><br><span class = 'itemDisc'>{item.disc}</span><br></p>
             {/each}
+        <div class = 'hoverImageDiv' transition:fade = "{{duration: 0}}">
+            <img class = 'hoverImage' src = {hoverImg} alt = 'Hover' style = 'mix-blend-mode: {imgBlend};'>
+        </div>
         </div>
         {/key}
         <div class = 'swipeDiv'>
@@ -437,7 +442,7 @@ function pageScroll() {
             <p class = 'hoursListItem'>5PM - 10PM</p>
             </div>
             <div class = 'dayDiv'>
-            <p class = hoursDay>SUDAY</p>
+            <p class = hoursDay>SUNDAY</p>
             <p class = 'hoursListItem'>5PM - 10PM</p>
             </div>
             </div>
