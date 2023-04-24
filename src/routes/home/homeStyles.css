@@ -868,5 +868,54 @@ html, body {
     .homeDiv {
         height: 100%;
     }
-    
+    .homeTextContainer {
+        padding-top: 60%;
+    }
+    .heritageText {
+        font-size: 1.2em;
+        text-shadow: 1px 1px #000000;
+    }
+    .ownersTitleText {
+        font-size: 1.5em;
+        text-shadow: 1px 1px #000000;
+    }
+    .quoteText {
+        font-size: 1.5em;
+        text-shadow: 1px 1px #000000;
+    }
+    .quoteAuthorText {
+        font-size: 1.5em;
+        text-shadow: 1px 1px #000000;
+    }
+    .menuText {
+        font-size: 1.2em;
+        text-shadow: 1px 1px #000000;
+    }
+    .itemDisc {
+        font-size: 0.6em;
+        text-shadow: 1px 1px #000000;
+    }
+    .menuTypeText{
+        font-size: 1.5em;
+        text-shadow: 1px 1px #000000;
+    }
+    .openText {
+        font-size: 1.5em;
+    }
+    .closingTimeText {
+        font-size: 1.5em;
+    }
+
+    .hoursDay {
+        font-size: 0.9em;
+    }
+    .hoursListItem {
+        font-size: 0.5em;
+    }
+    ::placeholder {
+        font-size: 0.4em;
+    }
+    .submitButton {
+        min-width: 90%;
+    }
 }
