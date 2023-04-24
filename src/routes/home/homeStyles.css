@@ -30,6 +30,7 @@ html, body {
     opacity: 0.8;
     width: 92%;
     position: fixed;
+    transition: 0.3s;
     /* position: fixed;
     width: 90%;
     align-self: center; */
@@ -532,16 +533,40 @@ html, body {
     padding-top: 5%;
     padding-bottom: 3%;
     text-shadow: 2px 2px #243763;
+    text-align: center;
 }
-
-.hoursListItem {
-    font-size: 1.5em;
+.hoursDay {
+    font-size: 2em;
     font-family: 'Proza Libre', sans-serif;
     color: #ffffff;
     margin:0;
     width: 100%;
-    text-align: left;
+    text-align: center;
     z-index: 100;
+}
+
+.hoursListItem {
+    font-size: 1em;
+    font-family: 'Proza Libre', sans-serif;
+    color: #F2F3F5;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+.hoursListDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5%;
+}
+.dayDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .reservationDiv {
@@ -565,6 +590,12 @@ html, body {
     padding-bottom: 5%;
     text-decoration: none;
     margin-left: 20%;
+    transition: 0.5s;
+}
+
+.reservationButton:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .locationDiv {
@@ -701,7 +732,12 @@ html, body {
     border-radius:40px/55%;
     max-width: 20%;
     border: none;
-    
+    transition: 0.5s;
+}
+
+.submitButton:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .socialsDiv {
@@ -737,6 +773,12 @@ html, body {
     padding-left: 10%;
     padding-right: 2%;
     aspect-ratio: 1/1;
+    transition: 0.5s;
+}
+
+.contactIcon:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .contactInfoText {

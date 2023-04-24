@@ -320,7 +320,7 @@ function pageScroll() {
     <div class = 'quoteTextDiv'>
         <p class = 'quoteText'>“If Gandhi were our age today, he’d totally be
             a hipster. He’s like ‘peace, love, nonviolence,
-            eat healthy, be good...’“</p>
+            eat healthy, be good...’"</p>
     </div>
     <div class = 'quoteAuthorDiv'>
         <p class = 'quoteAuthorText'>- Nakul Mahendro</p>
@@ -405,12 +405,42 @@ function pageScroll() {
     <div class = 'hoursMainContainer'>
         <div class = 'listedHours'>
             <h3 class = 'hoursListTitle'>Hours</h3>
-            <p class = 'hoursListItem'>MONDAY CLOSED</p>
-            <p class = 'hoursListItem'>TUESDAY 11:30AM - 3PM • 5PM - 10PM</p>
-            <p class = 'hoursListItem'>WEDNESDAY 11:30AM - 3PM • 5PM - 10PM</p>
-            <p class = 'hoursListItem'>THURSDAY 11:30AM - 3PM • 5PM - 10PM</p>
-            <p class = 'hoursListItem'>FRIDAY 11:30AM - 3PM • 5PM - 10PM</p>
-            <p class = 'hoursListItem'>SATURDAY 5PM - 10PMSUNDAY 5PM - 10PM</p>
+            <div class = 'hoursListDiv'>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>MONDAY</p>
+            <p class = 'hoursListItem'>CLOSED</p>
+            </div>
+            </div>
+            <div class = 'hoursListDiv'>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>TUESDAY</p>
+            <p class = 'hoursListItem'>11:30AM - 3PM <br> 5PM - 10PM</p>
+            </div>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>WEDNESDAY</p>
+            <p class = 'hoursListItem'>11:30AM - 3PM <br> 5PM - 10PM</p>
+            </div>
+            </div>
+            <div class = 'hoursListDiv'>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>THURSDAY</p>
+            <p class = 'hoursListItem'>11:30AM - 3PM <br> 5PM - 10PM</p>
+            </div>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>FRIDAY</p>
+            <p class = 'hoursListItem'>11:30AM - 3PM <br> 5PM - 10PM</p>
+            </div>
+            </div>
+            <div class = 'hoursListDiv'>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>SATURDAY</p>
+            <p class = 'hoursListItem'>5PM - 10PM</p>
+            </div>
+            <div class = 'dayDiv'>
+            <p class = hoursDay>SUDAY</p>
+            <p class = 'hoursListItem'>5PM - 10PM</p>
+            </div>
+            </div>
         </div>
         <div class = 'reservationDiv'>
             <a class = 'reservationButton' target="_blank" href = 'https://www.opentable.com/restref/client/?rid=104173&restref=104173&partysize=2&datetime=2023-04-22T19%3A00&lang=en-US&r3uid=GHFjTIxnu&color=1&corrid=4248193b-4765-4d6a-a98d-5416075ff1af'>Book A Table</a>
