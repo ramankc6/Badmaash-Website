@@ -230,6 +230,7 @@ function navigator (buttonPressed) {
             top: 0,
             behavior: 'smooth'
         })})
+    }
 }
 
 //Scrolling
