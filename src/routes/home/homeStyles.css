@@ -168,7 +168,7 @@ html, body {
 
 .heritageText {
     font-size: 2em;
-    color: #9CA777;
+    color: #5F264A;
     margin:0;
     width: 70%;
     text-align: center;
@@ -203,7 +203,7 @@ html, body {
 .ownersTitleText {
     font-size: 4em;
     font-family: 'Mina', sans-serif;
-    color: #7C9070;
+    color: #5F264A;
     margin:0;
     width: 100%;
     text-align: center;
@@ -258,7 +258,7 @@ html, body {
 .quoteText {
     font-size: 3em;
     font-family: 'Proza Libre', sans-serif;
-    color: #9CA777;
+    color: #0B2447;
     margin:0;
     width: 70%;
     text-align: center;
@@ -273,12 +273,13 @@ html, body {
     align-items: flex-end;
     margin: 0;
     width: 80%;
+    padding-bottom: 5%;
 }
 
 .quoteAuthorText {
     font-size: 3em;
     font-family: 'Proza Libre', sans-serif;
-    color: #9CA777;
+    color: #0B2447;
     margin:0;
     z-index: 100;
     padding-top: 2%;
@@ -524,7 +525,7 @@ html, body {
 .hoursListTitle {
     font-size: 3em;
     font-family: cursive;
-    color: #243763;
+    color: #DDFFBB;
     margin:0;
     width: 100%;
     z-index: 100;
@@ -780,4 +781,31 @@ html, body {
     padding-left: 6%;
     padding-right: 3%;
 
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 7%;
+    padding-left: 30%;
+}
+
+@media only screen and (max-width: 767px) {
+    .contactInfoText {
+        font-size: 0.85em;
+    }
+    .ownersName {
+        font-size: 1em;
+    }
+    .socialsTitle {
+        font-size: 1.5em;
+    }
+    .navItem {
+        font-size: 0.5em;
+    }
+    .homeDiv {
+        height: 100%;
+    }
+    
 }

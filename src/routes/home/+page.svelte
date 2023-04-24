@@ -5,6 +5,7 @@
 import "./homeStyles.css"
 import { onMount } from "svelte"
 import { fade } from "svelte/transition"
+import Map from "../../components/Map.svelte"
 
 //Declare Variables
 let userWidth
@@ -305,15 +306,15 @@ function pageScroll() {
     <div class = 'ownersImageContainer'>
         <div class = 'ownersImageDiv'>
             <img class = 'ownersImage' src = '/nakulMahendro.png' alt = 'Nakul Mahendro'>
-            <p class = 'ownersName'>NAKUL MAHENDRO</p>
+            <p class = 'ownersName'>NAKUL<br>MAHENDRO</p>
         </div>
         <div class = 'ownersImageDiv'>
             <img class = 'ownersImage' src = '/pawanMahendro.png' alt = 'Pawan Mahendro'>
-            <p class = 'ownersName'>PAWAN MAHENDRO</p>
+            <p class = 'ownersName'>PAWAN<br>MAHENDRO</p>
         </div>
         <div class = 'ownersImageDiv'>
             <img class = 'ownersImage' src = '/arjunMahendro.png' alt = 'Arjun Mahendro'>
-            <p class = 'ownersName'>ARJUN MAHENDRO</p>
+            <p class = 'ownersName'>ARJUN<br>MAHENDRO</p>
         </div>
     </div>
     <div class = 'quoteTextDiv'>
@@ -418,6 +419,7 @@ function pageScroll() {
     <div class = 'locationDiv'>
         <h3 class = 'locationTitle'>Location</h3>
         <p class = 'locationText'>108 W. 2nd Street, Downtown Los Angeles</p>
+        <div class = 'map'><Map /></div>
     </div>
 </div>
 
@@ -447,7 +449,7 @@ function pageScroll() {
                     <p class = 'contactInfoText'>@badmaashla</p>
                 </div>
                 <div class = 'contactRow'>
-                    <a class = 'iconButtons' href = "info@badmaashla.com" target="_blank"><img class = 'contactIcon' src = '/emailIcon.png' alt = 'Email Icon'></a>
+                    <a class = 'iconButtons' href = "mailto:info@badmaashla.com" target="_blank"><img class = 'contactIcon' src = '/emailIcon.png' alt = 'Email Icon'></a>
                     <p class = 'contactInfoText'>info@badmaashla.com</p>
                 </div>
                 <div class = 'contactRow'>
