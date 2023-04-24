@@ -67,6 +67,12 @@
         margin-top: 1rem;
         font-family: 'Proza Libre', sans-serif;
     }
+    .warningText {
+        font-size: 2rem;
+        color: white;
+        margin-top: 1rem;
+        font-family: 'Proza Libre', sans-serif;
+    }
     /* body {
         background-image: linear-gradient(#000000 50%, gray 50%);
     } */
@@ -80,4 +86,5 @@
 <div class = 'imgDiv'>
     <a href = '/home'><img src = 'logo.png' alt = 'Logo'></a>
     <p class = 'pertLoaded'>{Math.round(index * 100)}%</p>
+    <p class = 'warningText'>This is an Unoffical Website.</p>
 </div>
