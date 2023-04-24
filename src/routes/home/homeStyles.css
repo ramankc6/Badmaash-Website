@@ -150,7 +150,7 @@ html, body {
 
 .heritageTitle {
     font-size: 4em;
-    font-family:cursive;
+    font-family: 'Mina', sans-serif;
     color: #FEE8B0;
     margin:0;
     width: 100%;
@@ -306,7 +306,7 @@ html, body {
 
 .menuTitle {
     font-size: 4em;
-    font-family: cursive;
+    font-family: 'Mina', sans-serif;
     color: #FEE8B0;
     margin:0;
     width: 100%;
@@ -422,7 +422,7 @@ html, body {
 
 .galleryTitle {
     font-size: 4em;
-    font-family: cursive;
+    font-family: 'Mina', sans-serif;
     color: #FEE8B0;
     margin:0;
     width: 100%;
@@ -476,7 +476,7 @@ html, body {
 
 .hoursTitle {
     font-size: 4em;
-    font-family: cursive;
+    font-family: 'Mina', sans-serif;
     color: #FEE8B0;
     margin:0;
     width: 100%;
@@ -544,7 +544,7 @@ html, body {
 
 .hoursListTitle {
     font-size: 3em;
-    font-family: cursive;
+    font-family: 'Mina', sans-serif;
     color: #DDFFBB;
     margin:0;
     width: 100%;
@@ -682,7 +682,7 @@ html, body {
 
 .contactTitle {
     font-size: 3em;
-    font-family:  cursive;
+    font-family: 'Mina', sans-serif;
     color: #FEE8B0;
     margin:0;
     width: 100%;
