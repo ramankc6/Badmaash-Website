@@ -224,7 +224,12 @@ function navigator (buttonPressed) {
             top: contact.offsetTop,
             behavior: 'smooth'
         })})
-    }
+    } else if (buttonPressed == 'home') {
+        requestAnimationFrame(() => {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })})
 }
 
 //Scrolling
@@ -250,7 +255,7 @@ function pageScroll() {
     <!-- Nav Bar-->
     <div class = 'navContainer' bind:this = '{navContainer}'>
         <div class = 'navItem'>
-            <a href = '/'><img src = 'logo.png' alt = 'Logo'></a>
+            <a href = '#'on:click={() => navigator('home')}><img src = 'logo.png' alt = 'Logo'></a>
         </div>
         <div class = 'navItem'>
             <a href="#" on:click={() => navigator('about')}>About</a>
