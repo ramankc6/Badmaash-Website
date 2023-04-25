@@ -67,3 +67,5 @@ Lastly, a feature that I sadly couldn't implement was a fully functional contact
 I used Netlify to host my website since GitHub pages isn't great with Svelte.\
 \
 I am now going to work on adding more to the readme and cleaning up my code so it looks presentable.\
+\
+<b>Update:<b> I figured out the form using Netlify. It is a fully functioning contact form now!
