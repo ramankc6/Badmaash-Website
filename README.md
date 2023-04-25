@@ -46,3 +46,24 @@ I have only used HTML and CSS so far. I wanted to get the design done before I s
 [Here](https://www.youtube.com/watch?v=pXit3cEKdjQ) is a video of the website about half way though the redesign.\
 \
 [Here](https://youtu.be/VVVx523iWxY) is a video of the website after most of the redesign. I don't know if this will reseble the final product at the end but I am proud of it.\
+
+### Day 4 - 6
+I haven't updated this log in a while because I have been working on this project pretty much non-stop for the last couple days. A few things have changed since the last time I updated this log.\
+\
+Firstly I redid the design alot. I think I redid it atleast 10 times. I am really happy with how it turned out though. I think it looks really good. I wanted to make sure this left a good impression on the Snap recruiting team.\
+\
+I added a loading screen that I think looks pretty cool. It has a loading loading percentage that fills up and then the website loads. I also made it so that the nav bar changes colors based on the background using a scroll JavaScript function.\
+\
+I completly redid the menu section. I made it so that the user can flip through all the menu options and when the user hovers over one, it shares an image of that menu item. I think this is a really cool feature because it shows off every dish individually.\
+\
+I also made the website mobile responsive. It doesn't look as good on mobile but it doesn't look awkward. All the PC features also work on mobile. The only difference is that the menu image changes on tap and not on hover. I did think becasue hovering is super buggy on mobile.\
+\
+I also added a map under the restaurant's address. I think this is a really cool feature because it allows the user to see where the restaurant is located. This was my first time using APIs so I really struggled with it. I endded up accedently posting my API key to the public repo 3 different times. I fixed it by changing the key and rebasing my repo (which is also something new I learned).\
+\
+Another really cool feature I added was text that says if the restaurant is open or closed. It also shows how many minutes/hours until the restaurant opens/closes. I think this is a really cool feature because it allows the user to know if the restaurant is open or not without having to call them.\
+\
+Lastly, a feature that I sadly couldn't implement was a fully functional contact form. Well technically, I was able to implement it but for some reason it wouldn't work unless my API key was public. I tried using gitignore and a .env file but for some reason it was having trouble reading the .env file. For fear of my API key being abused, I left the feature out. I did end up accidently posting the password to my email but I rebased the repo right away and changed my password\
+\
+I used Netlify to host my website since GitHub pages isn't great with Svelte.\
+\
+I am now going to work on adding more to the readme and cleaning up my code so it looks presentable.\
