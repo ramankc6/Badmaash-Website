@@ -377,24 +377,24 @@ function pageScroll() {
                 <img class = 'galleryImage' src = '/galleryImage1.png' alt = 'Gallery 1'>
             </div>
             <div>
-                <img class = 'galleryImage' src = '/galleryImage2.png' alt = 'Gallery 1'>
+                <img class = 'galleryImage' src = '/galleryImage2.png' alt = 'Gallery 2'>
             </div>
             <div>
-                <img class = 'galleryImage' src = '/galleryImage3.png' alt = 'Gallery 1'>
+                <img class = 'galleryImage' src = '/galleryImage3.png' alt = 'Gallery 3'>
             </div>
             <div>
-                <img class = 'galleryImage' src = '/galleryImage4.png' alt = 'Gallery 1'>
+                <img class = 'galleryImage' src = '/galleryImage4.png' alt = 'Gallery 4'>
             </div>
         </div>
         <div class = 'galleryImagesLeft'>
             <div>
-                <img class = 'galleryImage' src = '/galleryImage5.png' alt = 'Gallery 1'>
+                <img class = 'galleryImage' src = '/galleryImage5.png' alt = 'Gallery 5'>
             </div>
             <div>
-                <img class = 'galleryImage' src = '/galleryImage6.png' alt = 'Gallery 1'>
+                <img class = 'galleryImage' src = '/galleryImage6.png' alt = 'Gallery 6'>
             </div>
             <div>
-                <img class = 'galleryImage' src = '/galleryImage7.png' alt = 'Gallery 1'>
+                <img class = 'galleryImage' src = '/galleryImage7.png' alt = 'Gallery 7'>
             </div>
         </div>
     </div>
