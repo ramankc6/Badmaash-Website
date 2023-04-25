@@ -2,7 +2,7 @@
 For technical round of Snap Engineering Academy
 
 ## Context
-This is my second ever individual webdev project. Before this I had never used an API. I am so color blind so the design was a little difficult to get right.\
+This is my second ever individual webdev project. Before this I had never used an API. I am so color blind so the design was a little difficult to get right.
 
 ## Resources Used
 - HTML/CSS/JS documentation
@@ -37,7 +37,7 @@ This is my second ever individual webdev project. Before this I had never used a
 [Here](https://badmaash-website.vercel.app/) is a link to the website.\
 \
 The code for the home page is in the 'src/routes/home/' folder and the code for the loading page is in the 'src/routes/+page.svelte' file.\
-\
+
 
 
 
@@ -70,7 +70,7 @@ This is what it looked like after I went back and make it look better:\
 I think what really helped me was creating a Pinterest board of websites that I liked and then using that as a reference. I also used a lot of the design principles that I learned from watching YouTube videos.\
 \
 I can't want to start coding tomorrow!\
-\
+
 
 ### Day 3
 Okay so to get started on development, I decided to use SvelteKit. SvelteKit basically just sets up a Svelte environment for me.\
@@ -85,7 +85,7 @@ I have only used HTML and CSS so far. I wanted to get the design done before I s
 \
 [Here](https://www.youtube.com/watch?v=pXit3cEKdjQ) is a video of the website about half way though the redesign.\
 \
-[Here](https://youtu.be/VVVx523iWxY) is a video of the website after most of the redesign. I don't know if this will reseble the final product at the end but I am proud of it.\
+[Here](https://youtu.be/VVVx523iWxY) is a video of the website after most of the redesign. I don't know if this will reseble the final product at the end but I am proud of it.
 
 ### Day 4 - 6
 I haven't updated this log in a while because I have been working on this project pretty much non-stop for the last couple days. A few things have changed since the last time I updated this log.\
