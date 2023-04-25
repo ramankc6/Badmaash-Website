@@ -475,7 +475,7 @@ function pageScroll() {
                 <input class = 'contactInput' type = 'text' placeholder = 'Your Name' name="name" />
                 <input class = 'contactInput' type = 'email' placeholder = 'Your Email' name="email" />
                 <textarea class = 'contactMessageInput' placeholder = 'Your Message' name="message"></textarea>
-                <button class = 'submitButton'>Send</button>
+                <button class = 'submitButton' type= 'submit'>Send</button>
             </form>
         </div>
         <div class = 'socialsDiv'>
