@@ -1,6 +1,46 @@
 # Badmaash-Website
 For technical round of Snap Engineering Academy
 
+## Context
+This is my second ever individual webdev project. Before this I had never used an API. I am so color blind so the design was a little difficult to get right.\
+
+## Resources Used
+- HTML/CSS/JS documentation
+- SvelteKit documentation
+- Figma
+- CoolorHunt
+
+## Features
+- [x] A landing page with a navigation bar
+- [x] A menu section that allows the user to flip through the different menu catagories
+- [x] A gallery section with images from the restaurants instagram
+- [x] A contact section with a fully funtional form that allows the user to send a message to the restaurant
+- [x] A loading screen that shows the user the progress of the website loading
+- [x] A navigation bar that changes color based on the background
+- [x] A responsive design that works on all screen sizes
+- [x] Page anchors that allow the user to navigate through the website
+- [x] When you hover over a menu item, it shows you a picture of the item
+- [x] Shows if the restaurant is open or closed
+- [x] Shows how long until the restaurant opens or closes
+- [x] An interactive map that shows the location of the restaurant
+- [x] A link to set up reservations at the retaurant
+
+## Limitations
+- When on PC, the menu image changes on hover, but when on mobile, the menu image changes on click. This is because onHover is not very user friendly on mobile.
+- The time until closing is a bit buggy depending on the browser but it's accurate most of the time. The time also only updates when the page is refreshed.
+- The website doesn't work great on Firefox because of some CSS issues. It works perfectly on Safari and Chrome though.
+- Its a big buggy when you switch to mobile view on a PC. However, tt fixed itself when you refresh the page and works perfectly on mobile.
+
+
+## Try It Out!
+
+[Here](https://badmaash-website.vercel.app/) is a link to the website.\
+\
+The code for the home page is in the 'src/routes/home/' folder and the code for the loading page is in the 'src/routes/+page.svelte' file.\
+\
+
+
+
 ## Developer Log
 ### Day 1
 I just got the prompt and I am really excited! Firstly I needed to find a business in LA. For this I choose a retaurant called Badmaash. 

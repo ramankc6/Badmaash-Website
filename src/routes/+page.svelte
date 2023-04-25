@@ -72,6 +72,7 @@
         color: white;
         margin-top: 1rem;
         font-family: 'Proza Libre', sans-serif;
+        text-align: center;
     }
     /* body {
         background-image: linear-gradient(#000000 50%, gray 50%);
