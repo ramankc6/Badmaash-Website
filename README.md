@@ -36,7 +36,7 @@ This is my second ever individual webdev project. Before this I had never used a
 
 [Here](https://badmaash-website.vercel.app/) is a link to the website.\
 \
-The code for the home page is in the 'src/routes/home/' folder and the code for the loading page is in the 'src/routes/+page.svelte' file.\
+The code for the home page is in the 'src/routes/home/' folder and the code for the loading page is in the 'src/routes/+page.svelte' file.
 
 
 
@@ -69,7 +69,7 @@ This is what it looked like after I went back and make it look better:\
 
 I think what really helped me was creating a Pinterest board of websites that I liked and then using that as a reference. I also used a lot of the design principles that I learned from watching YouTube videos.\
 \
-I can't want to start coding tomorrow!\
+I can't want to start coding tomorrow!
 
 
 ### Day 3
@@ -105,6 +105,8 @@ Another really cool feature I added was text that says if the restaurant is open
 Lastly, a feature that I sadly couldn't implement was a fully functional contact form. Well technically, I was able to implement it but for some reason it wouldn't work unless my API key was public. I tried using gitignore and a .env file but for some reason it was having trouble reading the .env file. For fear of my API key being abused, I left the feature out. I did end up accidently posting the password to my email but I rebased the repo right away and changed my password\
 \
 I used Netlify to host my website since GitHub pages isn't great with Svelte.\
+\
+[This](https://youtu.be/H4I5EPYaVC0) is what it looked like about half way though the redesign and the JS implimentation.\
 \
 I am now going to work on adding more to the readme and cleaning up my code so it looks presentable.\
 \
