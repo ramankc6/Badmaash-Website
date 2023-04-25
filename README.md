@@ -34,7 +34,7 @@ This is my second ever individual webdev project. Before this I had never used a
 
 ## Try It Out!
 
-[Here](https://badmaash-website.vercel.app/) is a link to the website.\
+[Here](https://main--fancy-horse-590526.netlify.app) is a link to the website.\
 \
 The code for the home page is in the 'src/routes/home/' folder and the code for the loading page is in the 'src/routes/+page.svelte' file.
 
