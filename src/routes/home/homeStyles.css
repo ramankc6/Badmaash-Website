@@ -545,7 +545,6 @@ html, body {
 .hoursListTitle {
     font-size: 3em;
     font-family: 'Mina', sans-serif;
-    color: #DDFFBB;
     margin:0;
     width: 100%;
     z-index: 100;
@@ -553,6 +552,7 @@ html, body {
     padding-bottom: 3%;
     text-shadow: 2px 2px #243763;
     text-align: center;
+    color: #7C9070;
 }
 .hoursDay {
     font-size: 2em;
