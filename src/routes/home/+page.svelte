@@ -472,9 +472,9 @@ function pageScroll() {
         <div class = 'contactFormDiv'>
             <h1 class = 'contactTitle'>Contact</h1>
             <form class = 'formDiv'  data-netlify="true">
-                <input class = 'contactInput' type = 'text' placeholder = 'Your Name'>
-                <input class = 'contactInput' type = 'email' placeholder = 'Your Email'>
-                <textarea class = 'contactMessageInput' placeholder = 'Your Message'></textarea>
+                <input class = 'contactInput' type = 'text' placeholder = 'Your Name' name="name">
+                <input class = 'contactInput' type = 'email' placeholder = 'Your Email' name="email">
+                <textarea class = 'contactMessageInput' placeholder = 'Your Message' name="message"></textarea>
                 <button class = 'submitButton'>Send</button>
             </form>
         </div>
